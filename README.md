@@ -1,10 +1,21 @@
-# discinfo2titles
+# Discinfo2Titles
 
 This script is used for converting a `disc.info` generated from `Wii Backup Manager` into a `titles.txt`, which can be read by `Configurable USB Loader`.
 
-## Usage
+## Preparation
 
 * copy a `disc.info`-file into the same folder as the script
-* remove the first two lines in it (WBM disc info)
-* `chmod +x discinfo2titles.py`
-* `python3 discinfo2titles.py`
+  
+## Usage
+
+```text
+usage: discinfo2titles.py [-h] [-V] [-v] [-p]
+
+Converts a disc.info to titles.txt
+
+optional arguments:
+  -h, --help      show this help message and exit
+  -V, --version   show program's version number and exit
+  -v, --verbose   More Output
+  -p, --preserve  Don't delete disc.info
+  ```
