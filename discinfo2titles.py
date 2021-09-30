@@ -5,7 +5,7 @@ Created Date: 29.09.2021 23:23:31
 Author: Sascha Buerk
 Email: macfly@german-bash.org
 License: GPL-3.0-only
-Last Modified: 30.09.2021 05:24:11
+Last Modified: 30.09.2021 05:28:52
 
 Copyright (C) 2021 Sascha Buerk
 This program is free software: you can redistribute it and/or modify it
@@ -39,17 +39,16 @@ parser.add_argument('file', metavar='file', nargs='?',
                     default=inputfile, help='the full path to disc.info (default: %(default)s)')
 parser.add_argument('-V', '--version', action='version',
                     version='%(prog)s {v}'.format(v=__version__))
-parser.add_argument('-v', '--verbose', action='store_true', help='More Output')
+parser.add_argument('-v', '--verbose', action='store_true', help='more output')
 parser.add_argument('-d', '--delete', action='store_true',
                     help='delete disc.info after converting')
 args = parser.parse_args()
 
-inputpath = args.file
 tmppath = "/tmp/" + inputfile
 input = tmppath
 
 try:
-    copyfile(inputpath, input)  # copy input to tmp
+    copyfile(args.file, input)  # copy input to tmp
 
     # Prepare disc.info
     a_file = open(input, "r")
