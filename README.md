@@ -18,3 +18,7 @@ optional arguments:
   -v, --verbose  More Output
   -d, --delete   delete disc.info after converting
   ```
+
+## Example
+
+`discinfo2titles.py -v examples/disc.info`
