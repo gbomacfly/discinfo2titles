@@ -4,11 +4,13 @@ File: discinfo2titles.py
 Created Date: 29.09.2021 23:23:31
 Author: Sascha Buerk
 Email: macfly@german-bash.org
-Last Modified: 30.09.2021 02:21:00
+License: GPL-3.0-only
+Last Modified: 30.09.2021 04:50:16
 """
 
 __author__ = "Sascha Buerk"
 __email__ = "macfly@german-bash.org"
+__license__ = "GPLv3"
 __version__ = 1.0
 
 import configparser
