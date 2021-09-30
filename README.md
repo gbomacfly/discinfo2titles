@@ -15,7 +15,7 @@ positional arguments:
 optional arguments:
   -h, --help     show this help message and exit
   -V, --version  show program's version number and exit
-  -v, --verbose  More Output
+  -v, --verbose  more output
   -d, --delete   delete disc.info after converting
   ```
 
