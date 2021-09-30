@@ -4,7 +4,7 @@ File: discinfo2titles.py
 Created Date: 29.09.2021 23:23:31
 Author: Sascha Buerk
 Email: macfly@german-bash.org
-Last Modified: 30.09.2021 01:59:51
+Last Modified: 30.09.2021 02:21:00
 """
 
 __author__ = "Sascha Buerk"
@@ -39,22 +39,23 @@ input = tmppath
 try:
     copyfile(inputpath, input) # copy input to tmp
 
-    # Prepare disc.info
+    ### Prepare disc.info
     a_file = open(input, "r")
     lines = a_file.readlines()
     a_file.close()
 
     if (lines[0] == "\ufeffWBM disc info\n"):
-        del lines[:2]  # Delete the first two lines
+        del lines[:2]  # delete the first two lines
 
-        new_file = open(input, "w+")  # Write back to outputfile
+        new_file = open(input, "w+")  # write back to outputfile
         for line in lines:
             new_file.write(line)
         new_file.close()
 
     open(output, 'w').close()  # clear current or make new output file
-    f = open(output, "a")  # Open output for append
+    f = open(output, "a")  # open output for append
 
+    ### read disc.info
     config = configparser.ConfigParser()
     config.read(input)
 
@@ -70,7 +71,7 @@ try:
     print("All done, output written to {output}".format(output=output))
     exit(0)
 
-### Error Handling
+### error handling
 except FileNotFoundError:
     print("{input} not found.".format(input=inputfile))
     exit(1)
