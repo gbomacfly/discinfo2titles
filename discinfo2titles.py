@@ -5,7 +5,7 @@ Created Date: 29.09.2021 23:23:31
 Author: Sascha Buerk
 Email: macfly@german-bash.org
 License: GPL-3.0-only
-Last Modified: 30.09.2021 04:50:16
+Last Modified: 30.09.2021 04:53:10
 """
 
 __author__ = "Sascha Buerk"
@@ -39,9 +39,9 @@ tmppath = "/tmp/" + inputfile
 input = tmppath
 
 try:
-    copyfile(inputpath, input) # copy input to tmp
+    copyfile(inputpath, input)  # copy input to tmp
 
-    ### Prepare disc.info
+    # Prepare disc.info
     a_file = open(input, "r")
     lines = a_file.readlines()
     a_file.close()
@@ -57,14 +57,14 @@ try:
     open(output, 'w').close()  # clear current or make new output file
     f = open(output, "a")  # open output for append
 
-    ### read disc.info
+    # read disc.info
     config = configparser.ConfigParser()
     config.read(input)
 
     for key in config.sections():
         f.write(key + " = " + config[key]['Original Title'] + "\n")
         if args.verbose:
-            (print(key + " = " + config[key]['Original Title']))
+            print(key + " = " + config[key]['Original Title'])
     f.close()
 
     if args.delete:
@@ -73,7 +73,7 @@ try:
     print("All done, output written to {output}".format(output=output))
     exit(0)
 
-### error handling
+# error handling
 except FileNotFoundError:
     print("{input} not found.".format(input=inputfile))
     exit(1)
