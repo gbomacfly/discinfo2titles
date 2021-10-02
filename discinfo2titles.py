@@ -4,23 +4,21 @@ File: discinfo2titles.py
 Created Date: 29.09.2021 23:23:31
 Author: Sascha Buerk
 Email: macfly@german-bash.org
-License: GPL-3.0-only
-Last Modified: 01.10.2021 11:00:59
+License: CC BY-SA 4.0
+Last Modified: 03.10.2021 00:13:51
 
 Copyright (C) 2021 Sascha Buerk
-This program is free software: you can redistribute it and/or modify it
-under the terms of the GNU General Public License as published by the
-Free Software Foundation, version 3. This program is distributed in the
-hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
-implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-See the GNU General Public License for more details. You should have 
-received a copy of the GNU General Public License along with this program.
-If not, see <https://www.gnu.org/licenses/>.
+This work is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International License.
+To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/ or
+send a letter to Creative Commons, PO Box 1866,
+Mountain View, CA 94042, USA.
 """
 
 __author__ = "Sascha Buerk"
 __email__ = "macfly@german-bash.org"
-__license__ = "GPLv3-only"
+__license__ = "CC BY-SA 4.0"
 __version__ = 1.1
 
 import configparser

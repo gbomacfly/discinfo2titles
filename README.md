@@ -1,5 +1,11 @@
 # Discinfo2Titles
 
+[![Generic badge](https://img.shields.io/github/repo-size/gbomacfly/discinfo2titles?style=plastic)](https://shields.io/)
+[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg?style=plastic)](https://github.com/gbomacfly/discinfo2titles/releases/)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/gbomacfly/discinfo2titles)
+[![licensebuttons by-sa](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0)
+
+
 This script is used for converting a `disc.info` generated from `Wii Backup Manager` into a `titles.txt`, which can be read by `Configurable USB Loader`.
   
 ## Usage
@@ -25,10 +31,13 @@ optional arguments:
 
 ## License
 
-Copyright (C) 2021 Sascha Buerk
+```text
+discinfo2titles © 2021 by Sascha Bürk is licensed under CC BY-SA 4.0
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+This work is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International License.
+To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/ or
+send a letter to Creative Commons, PO Box 1866,
+Mountain View, CA 94042, USA.
+```
