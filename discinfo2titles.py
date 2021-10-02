@@ -4,8 +4,8 @@ File: discinfo2titles.py
 Created Date: 29.09.2021 23:23:31
 Author: Sascha Buerk
 Email: macfly@german-bash.org
-License: CC BY-SA 4.0
-Last Modified: 03.10.2021 00:13:51
+License: CC-BY-SA-4.0
+Last Modified: 03.10.2021 00:29:14
 
 Copyright (C) 2021 Sascha Buerk
 This work is licensed under the Creative Commons
@@ -18,7 +18,7 @@ Mountain View, CA 94042, USA.
 
 __author__ = "Sascha Buerk"
 __email__ = "macfly@german-bash.org"
-__license__ = "CC BY-SA 4.0"
+__license__ = "CC-BY-SA-4.0"
 __version__ = 1.1
 
 import configparser
@@ -80,7 +80,8 @@ try:
     if args.delete:
         os.remove(args.file)
 
-    print("All done, output written to {output}".format(output=output))
+    if args.verbose:
+        print("All done, output written to {output}".format(output=output))
     exit(0)
 
 # error handling
