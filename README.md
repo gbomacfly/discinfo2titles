@@ -1,10 +1,10 @@
 # Discinfo2Titles
 
+[![licensebuttons by-sa](https://img.shields.io/badge/license-CC--BY--SA--4.0-blue)](https://creativecommons.org/licenses/by-sa/4.0)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/gbomacfly/discinfo2titles)
 [![Generic badge](https://img.shields.io/github/repo-size/gbomacfly/discinfo2titles?style=plastic)](https://shields.io/)
 [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg?style=plastic)](https://github.com/gbomacfly/discinfo2titles/releases/)
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/gbomacfly/discinfo2titles)
-[![licensebuttons by-sa](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0)
-
 
 This script is used for converting a `disc.info` generated from `Wii Backup Manager` into a `titles.txt`, which can be read by `Configurable USB Loader`.
   
