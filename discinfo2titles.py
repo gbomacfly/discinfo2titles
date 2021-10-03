@@ -5,7 +5,7 @@ Created Date: 29.09.2021 23:23:31
 Author: Sascha Buerk
 Email: macfly@german-bash.org
 License: CC-BY-SA-4.0
-Last Modified: 03.10.2021 00:39:09
+Last Modified: 03.10.2021 16:33:03
 
 Copyright (C) 2021 Sascha Buerk
 This work is licensed under the Creative Commons
@@ -36,7 +36,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument('file', metavar='file', nargs='?',
                     default=inputfile, help='the full path to disc.info (default: %(default)s)')
 parser.add_argument('-V', '--version', action='version',
-                    version='%(prog)s {v}'.format(v=__version__))
+                    version='%(prog)s {}'.format(__version__))
 parser.add_argument('-v', '--verbose', action='store_true', help='more output')
 parser.add_argument('-a', '--append', action='store_false', default=True,
                     help='append titles.txt instead of overwriting it')
@@ -81,13 +81,13 @@ try:
         os.remove(args.file)
 
     if args.verbose:
-        print("All done, output written to {output}".format(output=output))
+        print("All done, output written to {}".format(output))
     exit(0)
 
 # error handling
 except FileNotFoundError:
-    print("{input} not found.".format(input=inputfile))
+    print("{} not found.".format(inputfile))
     exit(1)
 except PermissionError:
-    print("{output} not writeable.".format(output=output))
+    print("{} not writeable.".format(output))
     exit(2)
