@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 """
-File: discinfo2titles.py
-Created Date: 29.09.2021 23:23:31
+Filename: discinfo2titles.py
+Created Date: 20.03.2023 10:43:53
 Author: Sascha Buerk
 Email: macfly@german-bash.org
-License: CC-BY-SA-4.0
-Last Modified: 03.10.2021 16:33:03
+License: GPL-3.0-or-later
+Last Modified: 18.04.2023 02:17:29
 
-Copyright (C) 2021 Sascha Buerk
-This work is licensed under the Creative Commons
-Attribution-ShareAlike 4.0 International License.
-To view a copy of this license, visit
-http://creativecommons.org/licenses/by-sa/4.0/ or
-send a letter to Creative Commons, PO Box 1866,
-Mountain View, CA 94042, USA.
+Copyright (C) 2023 Sascha Bürk <macfly@german-bash.org>
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will beuseful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program. If not, see <https://www.gnu.org/licenses/>.
 """
-
 __author__ = "Sascha Buerk"
 __email__ = "macfly@german-bash.org"
-__license__ = "CC-BY-SA-4.0"
-__version__ = 1.2
+__license__ = "GPL-3.0-or-later"
+__version__ = 1.3
 
 import configparser
 import argparse
@@ -42,7 +46,7 @@ parser.add_argument('-a', '--append', action='store_false', default=True,
                     help='append titles.txt instead of overwriting it')
 parser.add_argument('-d', '--delete', action='store_true',
                     help='delete disc.info after converting')
-args = parser.parse_args()
+args = parser.parse_args([])
 
 tmppath = "/tmp/" + inputfile
 input = tmppath
