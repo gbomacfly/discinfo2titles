@@ -5,7 +5,7 @@ Created Date: 20.03.2023 10:43:53
 Author: Sascha Buerk
 Email: macfly@german-bash.org
 License: GPL-3.0-or-later
-Last Modified: 18.04.2023 02:17:29
+Last Modified: 20.04.2023 01:56:22
 
 Copyright (C) 2023 Sascha Bürk <macfly@german-bash.org>
 This program is free software: you can redistribute it and/or modify it under
@@ -46,7 +46,7 @@ parser.add_argument('-a', '--append', action='store_false', default=True,
                     help='append titles.txt instead of overwriting it')
 parser.add_argument('-d', '--delete', action='store_true',
                     help='delete disc.info after converting')
-args = parser.parse_args([])
+args, unknown = parser.parse_known_args()
 
 tmppath = "/tmp/" + inputfile
 input = tmppath
